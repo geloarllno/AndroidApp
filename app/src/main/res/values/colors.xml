@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="nav_background">#000000</color>
+    <color name="nav_item_selected">#FFD700</color>  <!-- Yellow selected item -->
+    <color name="nav_item_unselected">#FFFFFF</color>  <!-- Gray unselected items -->
+    <color name="button_background">#FFD700</color>
+    <color name="list_background">#F5F5F5</color>
+    <color name="yellow">#FFD700</color>
+</resources>

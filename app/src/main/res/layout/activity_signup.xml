@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD700"
+    tools:context=".SignupActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="412dp"
+        android:layout_height="230dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_logo2"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo2" />
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="499dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="365dp"
+            android:layout_height="48dp"
+            android:autofillHints="PersonName"
+            android:hint="@string/hint_enter_name"
+            android:inputType="textPersonName"
+            android:textColorHint="#595353"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="365dp"
+            android:layout_height="48dp"
+            android:autofillHints="emailAddress"
+            android:hint="@string/hint_enter_email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#595353"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="365dp"
+            android:layout_height="48dp"
+            android:autofillHints="password"
+            android:hint="@string/hint_enter_password"
+            android:inputType="textPassword"
+            android:textColorHint="#595353"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/passwordRequirements"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:text="Password must be 8-12 characters, include at least 1 uppercase letter and a number!"
+            android:textColor="#595353"
+            android:textSize="12sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="365dp"
+            android:layout_height="48dp"
+            android:autofillHints="password"
+            android:hint="@string/hint_confirm_password"
+            android:importantForAutofill="yes"
+            android:inputType="textPassword"
+            android:textColorHint="#595353"
+            android:textColor="#000000"/>
+
+        <Button
+            android:id="@+id/signupBtn"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#000000"
+            android:text="@string/signup"
+            android:textColor="#FFFFFF" />
+
+        <CheckBox
+            android:id="@+id/agreeCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="showTermsDialog"
+            android:paddingTop="8dp"
+            android:text="@string/agreeCheckBox"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/loginRedirect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_redirect"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

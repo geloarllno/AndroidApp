@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "209528445098",
+    "project_id": "guardianalert-00",
+    "storage_bucket": "guardianalert-00.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209528445098:android:f2d910533a7853a18598d3",
+        "android_client_info": {
+          "package_name": "com.project.guardianalertcapstone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3kSVPFuBLOOvsmd6oFWFRH1xscMkzSvM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

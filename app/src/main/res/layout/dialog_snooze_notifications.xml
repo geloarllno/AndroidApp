@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/snooze_for"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <RadioGroup
+        android:id="@+id/snoozeOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/snooze15min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fifteen_minutes"
+            android:padding="8dp" />
+
+        <RadioButton
+            android:id="@+id/snooze1hour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/one_hour"
+            android:padding="8dp" />
+
+        <RadioButton
+            android:id="@+id/snooze8hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/eight_hours"
+            android:padding="8dp" />
+
+        <RadioButton
+            android:id="@+id/snooze24hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/twenty_four_hours"
+            android:padding="8dp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#DDDDDD"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:backgroundTint="#FFEB3B"
+            android:textColor="#000000" />
+    </LinearLayout>
+</LinearLayout> 
